@@ -85,7 +85,7 @@ let nomarried = students.filter(names => names.isMarried === false);
 
 console.log("Женатые", married.map(names => names.name));
 console.log("Неженатые", nomarried.map(names => names.name));
-let newData = students.sort( (a,b) => b.age - a.age ).filter(el => el.age === students[0].age);
-console.log('самый старший',newData);
+let max = students.sort( (a,b) => b.age - a.age ).filter(el => el.age === students[0].age);
+console.log('самый старший',max);
 let min = students.sort( (a,b) => a.age - b.age ).filter(el => el.age === students[0].age);
 console.log('самый младший',min);
